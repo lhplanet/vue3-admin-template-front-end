@@ -23,6 +23,11 @@ import globalComponent from '@/components/index';
 // 安装自定义插件对象
 app.use(globalComponent);
 
+// 引入路由
+import router from './router'
+// 注册路由
+app.use(router)
+
 // 引入模板的全局样式
 import '@/styles/index.scss'
 
